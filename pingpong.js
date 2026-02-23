@@ -28,3 +28,13 @@ function draw(){
   
 }
 
+function movimentoBolinha(){
+ circle(xBolinha,yBolinha,diametro);
+  
+  xBolinha += velocidadeXBolinha;
+  yBolinha += velocidadeYBolinha;
+  if (xBolinha + raio > width || xBolinha-raio <0){
+    velocidadeXBolinha *= -1;
+  };
+  if(yBolinha + raio > height || yBolinha -raio <0){
+    velocidadeYBolinha *= -1}}
